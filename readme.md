@@ -1,7 +1,10 @@
 # RegexWriter
 This is a simple helper to enable taking actions based on writer output. Personal use is parsing ffmpeg command-line output for video duration and completion percentage. Use it for all sorts of fun stuff!
 
-## Example
+## Getting it
+	go get -u github.com/timdufrane/regexwriter
+	
+## Using it
 	package main
 
 	import (
