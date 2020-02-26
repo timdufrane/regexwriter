@@ -12,17 +12,17 @@ This is a simple helper to enable taking actions based on writer output. Persona
 	func main() {
 		reWriter := regexwriter.RegexWriter{}
 
-	    // Add one match action
+	    	// Add one match action
 		reWriter.AddMatchAction("production", func([][]byte) {
 			println("We're in production now, baby!")
 		})
 
-	    // Maybe add another!
+	    	// Maybe add another!
 		reWriter.AddMatchAction("(?i)test", func([][]byte) {
 			println("Looks like this is a case-insensitive test string!")
 		})
 
-	    // Or add an action when something doesn't match? How novel!
+	    	// Or add an action when something doesn't match? How novel!
 		reWriter.AddNonMatchAction("production", func([][]byte) {
 			println("This is definitely not a production string!")
 		})
