@@ -64,7 +64,6 @@ func (re RegexWriter) Write(b []byte) (n int, err error) {
 
 	for _, v := range re.nonMatchActions {
 		if !v.IsMatch(b) {
-
 			// Since there's no match here and we're reusing the same function
 			// definition, simply make the bytes look like [][]byte
 			v.PerformAction([][]byte{b[:]})
