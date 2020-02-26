@@ -5,6 +5,8 @@ This is a simple helper to enable taking actions based on writer output. Persona
 	go get -u github.com/timdufrane/regexwriter
 	
 ## Using it
+https://play.golang.org/p/xr3x5-wwDfu
+
 	package main
 
 	import (
