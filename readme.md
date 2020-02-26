@@ -37,3 +37,9 @@ This is a simple helper to enable taking actions based on writer output. Persona
 
 		reader.WriteTo(reWriter)
 	}
+### Result
+	**Testing first string**
+	Looks like this is a case-insensitive test string!
+	This is definitely not a production string!
+	**Testing second string**
+	We're in production now, baby!
